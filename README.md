@@ -3,3 +3,7 @@
 ###  microsoft.EntityFrameworkCore
 ###  Microsoft.EntityFrameworkCore.Sqlite
 ###  Microsoft.EntityFrameworkCore.Tools
+
+## command
+###  Add-Migration InitialCreate
+###  Update-Database
