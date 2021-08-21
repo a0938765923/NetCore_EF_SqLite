@@ -8,7 +8,7 @@ using WebApplication1.Model;
 namespace WebApplication1.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20210817144657_InitialCreate")]
+    [Migration("20210817160145_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -16,6 +16,20 @@ namespace WebApplication1.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.9");
+
+            modelBuilder.Entity("WebApplication1.Model.student", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("student");
+                });
 
             modelBuilder.Entity("WebApplication1.Model.users", b =>
                 {
@@ -34,7 +48,7 @@ namespace WebApplication1.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Uaa");
+                    b.ToTable("User");
                 });
 #pragma warning restore 612, 618
         }

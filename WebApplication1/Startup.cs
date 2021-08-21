@@ -35,7 +35,7 @@ namespace WebApplication1
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            string connecttext = "Filename=C:\\Users\\a0938\\Desktop\\My.DB";
+            string connecttext = "Filename=C:\\Users\\p10354279\\Desktop\\My.DB";
             services.AddDbContext<MyContext>(options => options.UseSqlite(connecttext));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);

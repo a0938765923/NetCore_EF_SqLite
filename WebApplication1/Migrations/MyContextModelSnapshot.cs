@@ -26,7 +26,7 @@ namespace WebApplication1.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("aaa");
+                    b.ToTable("student");
                 });
 
             modelBuilder.Entity("WebApplication1.Model.users", b =>
@@ -46,7 +46,7 @@ namespace WebApplication1.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Uaa");
+                    b.ToTable("User");
                 });
 #pragma warning restore 612, 618
         }
