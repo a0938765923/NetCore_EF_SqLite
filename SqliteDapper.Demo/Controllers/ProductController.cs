@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 using hw_backend_api_enhancement.Model;
 using Microsoft.AspNetCore.Mvc;
@@ -22,22 +23,35 @@ namespace SqliteDapper.Demo.Controllers
             this.productProvider = productProvider;
             this.productRepository = productRepository;
             this._config = config;
+            //var defaultCulture = _config["SupportedCultures:1"];
+            //var subProperty1 = _config["CustomObject:Property:SubProperty1"];
+            //var subProperty2 = _config["CustomObject:Property:SubProperty2"];
+            //var subProperty3 = _config["CustomObject:Property:SubProperty3"];
+
+            //Console.WriteLine(defaultCulture + "\n");
+            //Console.WriteLine(subProperty1 + "\n");
+            //Console.WriteLine(subProperty2);
+            //Console.WriteLine(subProperty3);
         }
 
-    // GET: api/<ProductController>
-    [HttpGet]
+        public void setConfig() {
+
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "Configuration"))
+                .AddJsonFile(path: "Settings.json", optional: true, reloadOnChange: true);
+            var config = builder.Build();
+            Console.WriteLine("------------------ProductController(Settings.json)--------------------");
+            Console.WriteLine($"AppId = {config["Player:AppId"]}");
+            Console.WriteLine($"Key = {config["Player:Key"]}");
+            Console.WriteLine($"Connection String = {config["ConnectionStrings:DefaultConnectionString"]}");
+
+        }
+
+        // GET: api/<ProductController>
+        [HttpGet]
         public async Task<IEnumerable<dynamic>> Get()
         {
-            var defaultCulture = _config["SupportedCultures:1"];
-            var subProperty1 = _config["CustomObject:Property:SubProperty"];
-            var subProperty2 = _config["CustomObject:Property:SubProperty2"];
-            var subProperty3 = _config["CustomObject:Property:SubProperty3"];
-
-            Console.WriteLine("this is test1"+ defaultCulture);
-            Console.WriteLine("this is test1" + subProperty1);
-            Console.WriteLine("this is test2" + subProperty2);
-            Console.WriteLine("this is test3" + subProperty3);
-
+            setConfig();
             return await productProvider.Get();
         }
 

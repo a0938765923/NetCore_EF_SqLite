@@ -20,17 +20,34 @@ namespace SqliteDapper.Demo
         }
 
         public IConfiguration Configuration { get; }
-        private IConfigurationRoot GetSettings()
-        {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "Configuration"))
-                .AddJsonFile(path: "Settings.json", optional: true, reloadOnChange: true);
-            return builder.Build();
-        }
+        //private IConfigurationRoot GetSettings()
+        //{
+        //    var builder = new ConfigurationBuilder()
+        //        .SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "Configuration"))
+        //        .AddJsonFile(path: "Settings.json", optional: true, reloadOnChange: true);
+        //    return builder.Build();
+        //}
         public class Settings
         {
             public string[] SupportedCultures { get; set; }
             //public CustomObject CustomObject { get; set; }
+        }
+
+        public class AppSetting
+        {
+            public ConnectionStrings ConnectionStrings { get; set; }
+
+            public Player Player { get; set; }
+        }
+
+      
+        public class Player
+        {
+            public string AppId { get; set; }
+
+            public string Key { get; set; }
+
+            public string name { get; set; }
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -43,9 +60,7 @@ namespace SqliteDapper.Demo
             services.AddSingleton<IDatabaseBootstrap, DatabaseBootstrap>();
             services.AddSingleton<IProductProvider, ProductProvider>();
             services.AddSingleton<IProductRepository, ProductRepository>();
-            services.AddSingleton(GetSettings());
-            //services.Configure<Settings>(GetSettings());
-            
+            services.Configure<AppSetting>(this.Configuration);
         }
        
 
