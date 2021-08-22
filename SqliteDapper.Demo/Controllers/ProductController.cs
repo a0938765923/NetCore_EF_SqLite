@@ -23,27 +23,18 @@ namespace SqliteDapper.Demo.Controllers
             this.productProvider = productProvider;
             this.productRepository = productRepository;
             this._config = config;
-            //var defaultCulture = _config["SupportedCultures:1"];
-            //var subProperty1 = _config["CustomObject:Property:SubProperty1"];
-            //var subProperty2 = _config["CustomObject:Property:SubProperty2"];
-            //var subProperty3 = _config["CustomObject:Property:SubProperty3"];
-
-            //Console.WriteLine(defaultCulture + "\n");
-            //Console.WriteLine(subProperty1 + "\n");
-            //Console.WriteLine(subProperty2);
-            //Console.WriteLine(subProperty3);
         }
 
         public void setConfig() {
 
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "Configuration"))
-                .AddJsonFile(path: "Settings.json", optional: true, reloadOnChange: true);
-            var config = builder.Build();
+            //var builder = new ConfigurationBuilder()
+            //    .SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "Configuration"))
+            //    .AddJsonFile(path: "Settings.json", optional: true, reloadOnChange: true);
+            //var config = builder.Build();
             Console.WriteLine("------------------ProductController(Settings.json)--------------------");
-            Console.WriteLine($"AppId = {config["Player:AppId"]}");
-            Console.WriteLine($"Key = {config["Player:Key"]}");
-            Console.WriteLine($"Connection String = {config["ConnectionStrings:DefaultConnectionString"]}");
+            //Console.WriteLine($"AppId = {_config["Player:AppId"]}");
+            //Console.WriteLine($"Key = {_config["Player:Key"]}");
+            //Console.WriteLine($"Connection String = {_config["ConnectionStrings:DefaultConnectionString"]}");
 
         }
 
@@ -51,7 +42,7 @@ namespace SqliteDapper.Demo.Controllers
         [HttpGet]
         public async Task<IEnumerable<dynamic>> Get()
         {
-            setConfig();
+            //setConfig();
             return await productProvider.Get();
         }
 

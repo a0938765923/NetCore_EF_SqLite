@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using static SqliteDapper.Demo.Startup;
 
 namespace SqliteDapper.Demo.Controllers
 {
@@ -19,25 +20,36 @@ namespace SqliteDapper.Demo.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
         private IConfiguration _config;
-        private Startup.AppSetting _appSetting;
+        //private Startup.AppSetting _appSetting;
+        //public AppSetting _appSetting { get; set; }
 
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IConfiguration config, IOptions<Startup.AppSetting> options)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IConfiguration config)
         {
             _logger = logger;
-            this._config = config;
-            this._appSetting = options.Value;
+            _config = config;
+          
+
+            //this._config = config;
+            //this._appSetting = options.Value;
 
         }
 
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            Console.WriteLine("-----------------WeatherForcecastController--------------------");
-            Console.WriteLine($"AppId = {_config["Player:AppId"]}");
-            Console.WriteLine($"AppId = {_config["Player:Key"]}");
-            Console.WriteLine($"AppId = {_config["Player:name"]}");
-            Console.WriteLine("APPseting"+ _appSetting);
+            var defaultCulture = _config["SupportedCultures:1"]; // defaultCulture = "zh-TW"
+            var subProperty1 = _config["CustomObject:Property:SubProperty1"]; // subProperty1 = "1"
+            var subProperty2 = _config["CustomObject:Property:SubProperty2"]; // subProperty2 = "True"
+            var subProperty3 = _config["CustomObject:Property:SubProperty3"]; // subProperty3 = "This is sub property."
+
+            Console.WriteLine("--------------this is my setting.json-----------------");
+            Console.WriteLine(defaultCulture);
+            Console.WriteLine(subProperty1);
+            Console.WriteLine(subProperty2);
+            Console.WriteLine(subProperty3);
+            Console.WriteLine("-------------------------------");
+
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

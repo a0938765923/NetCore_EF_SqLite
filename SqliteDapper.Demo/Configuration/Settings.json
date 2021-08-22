@@ -1,10 +1,15 @@
 {
-  "ConnectionStrings": {
-    "DefaultConnectionString": "Server=(localdb)\\mssqllocaldb;Database=EFGetStarted.ConsoleApp.NewDb;Trusted_Connection=True;"
+  "SupportedCultures": [
+    "en-GB",
+    "zh-TW",
+    "zh-CN"
+  ],
+  "CustomObject": {
+    "Property": {
+      "SubProperty1": 1,
+      "SubProperty2": true,
+      "SubProperty3": "This is sub property."
+    }
   },
-  "Player": {
-    "AppId": "testApp",
-    "Key": "12345678990",
-    "neme": "mark"
-  }
+  "DatabaseName": "Data Source=Product.sqlite"
 }
