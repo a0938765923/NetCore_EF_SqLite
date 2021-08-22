@@ -32,9 +32,10 @@ namespace SqliteDapper.Demo.Controllers
             //    .AddJsonFile(path: "Settings.json", optional: true, reloadOnChange: true);
             //var config = builder.Build();
             Console.WriteLine("------------------ProductController(Settings.json)--------------------");
-            //Console.WriteLine($"AppId = {_config["Player:AppId"]}");
-            //Console.WriteLine($"Key = {_config["Player:Key"]}");
-            //Console.WriteLine($"Connection String = {_config["ConnectionStrings:DefaultConnectionString"]}");
+            Console.WriteLine($"AppId = {_config["Player:AppId"]}");
+            Console.WriteLine($"Key = {_config["Player:Key"]}");
+            Console.WriteLine($"name = {_config["Player:name"]}");
+            Console.WriteLine($"Connection String = {_config["ConnectionStrings:DefaultConnectionString"]}");
 
         }
 
@@ -42,7 +43,7 @@ namespace SqliteDapper.Demo.Controllers
         [HttpGet]
         public async Task<IEnumerable<dynamic>> Get()
         {
-            //setConfig();
+            setConfig();
             return await productProvider.Get();
         }
 

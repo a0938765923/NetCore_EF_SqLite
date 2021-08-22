@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using System.IO;
+using System;
 
 namespace SqliteDapper.Demo
 {
@@ -21,8 +22,10 @@ namespace SqliteDapper.Demo
                {
                    var env = hostContext.HostingEnvironment;
                    config.SetBasePath(Path.Combine(env.ContentRootPath, "Configuration"))
-                       .AddJsonFile(path: "settings.json", optional: false, reloadOnChange: true);
-                       //.AddJsonFile(path: $"settings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
+                       .AddJsonFile(path: "settings.json", optional: false, reloadOnChange: true)
+                       .AddJsonFile(path: $"settings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true)
+                       .AddJsonFile(path: "setting2.json", optional: true, reloadOnChange: true);
+                   Console.WriteLine(env.EnvironmentName);
                })
                .UseStartup<Startup>()
                .Build();

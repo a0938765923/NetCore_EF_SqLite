@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a0938\\Desktop\\NetCore_EF_SqLite\\SqliteDapper.Demo\\SqliteDapper.Demo.csproj": {}
+    "C:\\Users\\p10354279\\Desktop\\NetCore_EF_SqLite\\SqliteDapper.Demo\\SqliteDapper.Demo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a0938\\Desktop\\NetCore_EF_SqLite\\SqliteDapper.Demo\\SqliteDapper.Demo.csproj": {
+    "C:\\Users\\p10354279\\Desktop\\NetCore_EF_SqLite\\SqliteDapper.Demo\\SqliteDapper.Demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a0938\\Desktop\\NetCore_EF_SqLite\\SqliteDapper.Demo\\SqliteDapper.Demo.csproj",
+        "projectUniqueName": "C:\\Users\\p10354279\\Desktop\\NetCore_EF_SqLite\\SqliteDapper.Demo\\SqliteDapper.Demo.csproj",
         "projectName": "SqliteDapper.Demo",
-        "projectPath": "C:\\Users\\a0938\\Desktop\\NetCore_EF_SqLite\\SqliteDapper.Demo\\SqliteDapper.Demo.csproj",
-        "packagesPath": "C:\\Users\\a0938\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a0938\\Desktop\\NetCore_EF_SqLite\\SqliteDapper.Demo\\obj\\",
+        "projectPath": "C:\\Users\\p10354279\\Desktop\\NetCore_EF_SqLite\\SqliteDapper.Demo\\SqliteDapper.Demo.csproj",
+        "packagesPath": "C:\\Users\\p10354279\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\p10354279\\Desktop\\NetCore_EF_SqLite\\SqliteDapper.Demo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\a0938\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\p10354279\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -91,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
