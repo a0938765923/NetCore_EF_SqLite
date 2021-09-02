@@ -128,3 +128,7 @@ C:\Users\a0938\Desktop\NetCore_EF_SqLite\SqliteDapper.Demo\obj\Debug\netcoreapp3
 C:\Users\a0938\Desktop\NetCore_EF_SqLite\SqliteDapper.Demo\obj\Debug\netcoreapp3.1\SqliteDapper.Demo.dll
 C:\Users\a0938\Desktop\NetCore_EF_SqLite\SqliteDapper.Demo\obj\Debug\netcoreapp3.1\SqliteDapper.Demo.pdb
 C:\Users\a0938\Desktop\NetCore_EF_SqLite\SqliteDapper.Demo\obj\Debug\netcoreapp3.1\SqliteDapper.Demo.genruntimeconfig.cache
+C:\Users\a0938\Desktop\NetCore_EF_SqLite\SqliteDapper.Demo\bin\Debug\netcoreapp3.1\NLog.Config
+C:\Users\a0938\Desktop\NetCore_EF_SqLite\SqliteDapper.Demo\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\a0938\Desktop\NetCore_EF_SqLite\SqliteDapper.Demo\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Users\a0938\Desktop\NetCore_EF_SqLite\SqliteDapper.Demo\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll

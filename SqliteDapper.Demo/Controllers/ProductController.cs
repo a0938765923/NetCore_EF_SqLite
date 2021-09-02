@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using hw_backend_api_enhancement.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using SqliteDapper.Demo.ProductMaster;
 
 namespace SqliteDapper.Demo.Controllers
@@ -16,13 +17,15 @@ namespace SqliteDapper.Demo.Controllers
         private readonly IProductProvider productProvider;
         private readonly IProductRepository productRepository;
         private readonly IConfiguration _config;
+        private readonly ILogger logger;
 
         public ProductController(IProductProvider productProvider,
-            IProductRepository productRepository, IConfiguration config)
+            IProductRepository productRepository, IConfiguration config, ILogger<ProductController> _logger)
         {
             this.productProvider = productProvider;
             this.productRepository = productRepository;
             this._config = config;
+            this.logger = _logger;
         }
 
         public void setConfig() {
@@ -43,6 +46,12 @@ namespace SqliteDapper.Demo.Controllers
         public async Task<IEnumerable<dynamic>> Get()
         {
             //setConfig();
+            logger.LogTrace("Loggin Level = 0 (Trace)");
+            logger.LogDebug("Loggin Level = 1 (Debug)");
+            logger.LogInformation("Loggin Level = 2 (Information)");
+            logger.LogWarning("Loggin Level = 3 (Warning )");
+            logger.LogError("Loggin Level = 4 (Error)");
+            logger.LogCritical("Loggin Level = 5 (Critical)");
             return await productProvider.Get();
         }
 

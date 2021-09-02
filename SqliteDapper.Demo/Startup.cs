@@ -8,7 +8,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SqliteDapper.Demo.Database;
 using SqliteDapper.Demo.ProductMaster;
-using System;
 
 namespace SqliteDapper.Demo
 {

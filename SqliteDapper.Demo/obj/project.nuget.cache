@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JipRY6A3cgUoBDzden8oMs0Z++BdS1FEajF59jwm7sIzjDtWUDQFBYejNy/XmuQm1rmm2l+qd08VMB3Yy+cHMw==",
+  "dgSpecHash": "schwn0Y2hBNGz70VYn760mXvflY3sDYeLq61d+OLDsmxCoT4HG0bvYC4NfDWbnpEjfxlzjKgyahsUqrfZJapfQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\a0938\\Desktop\\NetCore_EF_SqLite\\SqliteDapper.Demo\\SqliteDapper.Demo.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,11 @@
     "C:\\Users\\a0938\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\a0938\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\a0938\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\a0938\\.nuget\\packages\\nlog\\4.7.11\\nlog.4.7.11.nupkg.sha512",
+    "C:\\Users\\a0938\\.nuget\\packages\\nlog.config\\4.7.11\\nlog.config.4.7.11.nupkg.sha512",
+    "C:\\Users\\a0938\\.nuget\\packages\\nlog.extensions.logging\\1.7.4\\nlog.extensions.logging.1.7.4.nupkg.sha512",
+    "C:\\Users\\a0938\\.nuget\\packages\\nlog.schema\\4.7.11\\nlog.schema.4.7.11.nupkg.sha512",
+    "C:\\Users\\a0938\\.nuget\\packages\\nlog.web.aspnetcore\\4.14.0\\nlog.web.aspnetcore.4.14.0.nupkg.sha512",
     "C:\\Users\\a0938\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.4\\sqlitepclraw.bundle_e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\a0938\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
     "C:\\Users\\a0938\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
