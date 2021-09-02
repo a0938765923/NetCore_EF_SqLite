@@ -79,6 +79,10 @@
             "NLog.Web.AspNetCore": {
               "target": "Package",
               "version": "[4.14.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.115, )"
             }
           },
           "imports": [
