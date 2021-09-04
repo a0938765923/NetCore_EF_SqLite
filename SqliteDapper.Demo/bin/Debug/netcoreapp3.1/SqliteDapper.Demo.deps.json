@@ -38,7 +38,6 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.9",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.9",
           "Microsoft.Extensions.Configuration.Binder": "5.0.0",
-          "NLog.Config": "4.7.11",
           "NLog.Web.AspNetCore": "4.14.0",
           "System.Data.SQLite": "1.0.115",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
@@ -660,12 +659,6 @@
           "lib/netstandard2.0/NLog.dll": {}
         }
       },
-      "NLog.Config/4.7.11": {
-        "dependencies": {
-          "NLog": "4.7.11",
-          "NLog.Schema": "4.7.11"
-        }
-      },
       "NLog.Extensions.Logging/1.7.4": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "5.0.0",
@@ -681,7 +674,6 @@
           "lib/netcoreapp3.0/NLog.Extensions.Logging.dll": {}
         }
       },
-      "NLog.Schema/4.7.11": {},
       "NLog.Web.AspNetCore/4.14.0": {
         "dependencies": {
           "NLog.Extensions.Logging": "1.7.4"
@@ -2879,26 +2871,12 @@
       "path": "nlog/4.7.11",
       "hashPath": "nlog.4.7.11.nupkg.sha512"
     },
-    "NLog.Config/4.7.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-p9N8dsMVdyXNN+KU2BsBFZ1aR+usL8JWPKe1YuXlKjPEQsltYO43tajlkX2Kilai+PAE1zw9UC8AaBq5r78x3A==",
-      "path": "nlog.config/4.7.11",
-      "hashPath": "nlog.config.4.7.11.nupkg.sha512"
-    },
     "NLog.Extensions.Logging/1.7.4": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-/dMxI/lBPNhKe9uONCQaZ3JYSHJh9/yez4Uqc6yIo2hIGaoi8sbQg7WQqW5/1WAIquhrG/SeCEZUTGMiRSQAHw==",
       "path": "nlog.extensions.logging/1.7.4",
       "hashPath": "nlog.extensions.logging.1.7.4.nupkg.sha512"
-    },
-    "NLog.Schema/4.7.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-9mmj/hApaSmX9jP2PxLyqywesdEI1nIT2TVWgsdoqb1yIpxvUM+1b6aMD2zJkpGN8y71jmVO2d/FKTwQXIfpSw==",
-      "path": "nlog.schema/4.7.11",
-      "hashPath": "nlog.schema.4.7.11.nupkg.sha512"
     },
     "NLog.Web.AspNetCore/4.14.0": {
       "type": "package",

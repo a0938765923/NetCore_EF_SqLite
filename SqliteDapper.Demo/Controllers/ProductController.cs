@@ -35,9 +35,9 @@ namespace SqliteDapper.Demo.Controllers
             //    .AddJsonFile(path: "Settings.json", optional: true, reloadOnChange: true);
             //var config = builder.Build();
             Console.WriteLine("------------------ProductController(Settings.json)--------------------");
-            //Console.WriteLine($"AppId = {_config["Player:AppId"]}");
-            //Console.WriteLine($"Key = {_config["Player:Key"]}");
-            //Console.WriteLine($"Connection String = {_config["ConnectionStrings:DefaultConnectionString"]}");
+            Console.WriteLine($"AppId = {_config["Player:AppId"]}");
+            Console.WriteLine($"Key = {_config["Player:Key"]}");
+            Console.WriteLine($"Connection String = {_config["ConnectionStrings:DefaultConnectionString"]}");
 
         }
 
@@ -45,23 +45,13 @@ namespace SqliteDapper.Demo.Controllers
         [HttpGet]
         public async Task<IEnumerable<dynamic>> Get()
         {
-
-            //logger.LogInformation("Start : Getting item details for {ID}");
-
-            //List<string> list = new List<string>();
-
-            //list.Add("A");
-            //list.Add("B");
-
-            //logger.LogInformation($"Completed : Item details for  {{{string.Join(", ", list)}}}");
-
             //setConfig();
-            //logger.LogTrace("Loggin Level = 0 (Trace)");
-            //logger.LogDebug("Loggin Level = 1 (Debug)");
-            //logger.LogInformation("Loggin Level = 2 (Information)");
-            //logger.LogWarning("Loggin Level = 3 (Warning )");
-            //logger.LogError("Loggin Level = 4 (Error)");
-            //logger.LogCritical("Loggin Level = 5 (Critical)");
+            logger.LogTrace("Loggin Level = 0 (Trace)");
+            logger.LogDebug("Loggin Level = 1 (Debug)");
+            logger.LogInformation("Loggin Level = 2 (Information)");
+            logger.LogWarning("Loggin Level = 3 (Warning )");
+            logger.LogError("Loggin Level = 4 (Error)");
+            logger.LogCritical("Loggin Level = 5 (Critical)");
             return await productProvider.Get();
         }
 

@@ -1,80 +1,51 @@
-2021-09-02 18:02:50.5035 DEBUG Hosting starting
-2021-09-02 18:02:50.7866 DEBUG Failed to locate the development https certificate at '(null)'.
-2021-09-02 18:02:50.8392 DEBUG Using development certificate: CN=localhost (Thumbprint: 440FC03C52350CCCED65E4E2A805DB786892143B)
-2021-09-02 18:02:50.8678 DEBUG Hosting started
-2021-09-02 18:02:50.8678 DEBUG Loaded hosting startup assembly SqliteDapper.Demo
-2021-09-02 18:02:51.2726 DEBUG Connection id "0HMBDV39JID5L" accepted.
-2021-09-02 18:02:51.2726 DEBUG Connection id "0HMBDV39JID5K" accepted.
-2021-09-02 18:02:51.2726 DEBUG Connection id "0HMBDV39JID5K" started.
-2021-09-02 18:02:51.2726 DEBUG Connection id "0HMBDV39JID5L" started.
-2021-09-02 18:02:51.2973 DEBUG Connection id "0HMBDV39JID5K" received FIN.
-2021-09-02 18:02:51.2973 DEBUG Connection id "0HMBDV39JID5L" received FIN.
-2021-09-02 18:02:51.3151 DEBUG Failed to authenticate HTTPS connection.
-2021-09-02 18:02:51.3151 DEBUG Failed to authenticate HTTPS connection.
-2021-09-02 18:02:51.3234 DEBUG Connection id "0HMBDV39JID5K" stopped.
-2021-09-02 18:02:51.3234 DEBUG Connection id "0HMBDV39JID5L" stopped.
-2021-09-02 18:02:51.3234 DEBUG Connection id "0HMBDV39JID5K" sending FIN because: "The Socket transport's send loop completed gracefully."
-2021-09-02 18:02:51.3234 DEBUG Connection id "0HMBDV39JID5L" sending FIN because: "The Socket transport's send loop completed gracefully."
-2021-09-02 18:02:51.7592 DEBUG Connection id "0HMBDV39JID5M" accepted.
-2021-09-02 18:02:51.7592 DEBUG Connection id "0HMBDV39JID5M" started.
-2021-09-02 18:02:52.0497 INFO Request starting HTTP/2 GET https://localhost:5001/weatherforecast  
-2021-09-02 18:02:52.0610 DEBUG Wildcard detected, all requests with hosts will be allowed.
-2021-09-02 18:02:52.1173 DEBUG 1 candidate(s) found for the request path '/weatherforecast'
-2021-09-02 18:02:52.1173 DEBUG Endpoint 'SqliteDapper.Demo.Controllers.WeatherForecastController.Get (SqliteDapper.Demo)' with route pattern 'WeatherForecast' is valid for the request path '/weatherforecast'
-2021-09-02 18:02:52.1173 DEBUG Request matched endpoint 'SqliteDapper.Demo.Controllers.WeatherForecastController.Get (SqliteDapper.Demo)'
-2021-09-02 18:02:52.1173 INFO Executing endpoint 'SqliteDapper.Demo.Controllers.WeatherForecastController.Get (SqliteDapper.Demo)'
-2021-09-02 18:02:52.1308 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
-2021-09-02 18:02:52.1642 INFO Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[SqliteDapper.Demo.WeatherForecast] Get() on controller SqliteDapper.Demo.Controllers.WeatherForecastController (SqliteDapper.Demo).
-2021-09-02 18:02:52.1642 DEBUG Execution plan of authorization filters (in the following order): None
-2021-09-02 18:02:52.1642 DEBUG Execution plan of resource filters (in the following order): None
-2021-09-02 18:02:52.1642 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
-2021-09-02 18:02:52.1642 DEBUG Execution plan of exception filters (in the following order): None
-2021-09-02 18:02:52.1642 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
-2021-09-02 18:02:52.1642 DEBUG Executing controller factory for controller SqliteDapper.Demo.Controllers.WeatherForecastController (SqliteDapper.Demo)
-2021-09-02 18:02:52.1642 DEBUG Executed controller factory for controller SqliteDapper.Demo.Controllers.WeatherForecastController (SqliteDapper.Demo)
-2021-09-02 18:02:52.1642 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
-2021-09-02 18:02:52.1796 DEBUG No information found on request to perform content negotiation.
-2021-09-02 18:02:52.1796 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
-2021-09-02 18:02:52.1796 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
-2021-09-02 18:02:52.1796 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
-2021-09-02 18:02:52.1796 INFO Executing ObjectResult, writing value of type 'SqliteDapper.Demo.WeatherForecast[]'.
-2021-09-02 18:02:52.2540 INFO Executed action SqliteDapper.Demo.Controllers.WeatherForecastController.Get (SqliteDapper.Demo) in 81.7426ms
-2021-09-02 18:02:52.2550 INFO Executed endpoint 'SqliteDapper.Demo.Controllers.WeatherForecastController.Get (SqliteDapper.Demo)'
-2021-09-02 18:02:52.2550 INFO Request finished in 215.5618ms 200 application/json; charset=utf-8
-2021-09-02 18:27:07.5184 DEBUG Hosting starting
-2021-09-02 18:27:07.7797 DEBUG Failed to locate the development https certificate at '(null)'.
-2021-09-02 18:27:07.8304 DEBUG Using development certificate: CN=localhost (Thumbprint: 440FC03C52350CCCED65E4E2A805DB786892143B)
-2021-09-02 18:27:07.8573 DEBUG Hosting started
-2021-09-02 18:27:07.8573 DEBUG Loaded hosting startup assembly SqliteDapper.Demo
-2021-09-02 18:27:07.8736 DEBUG Connection id "0HMBDVGRMPNIA" accepted.
-2021-09-02 18:27:07.8736 DEBUG Connection id "0HMBDVGRMPNIA" started.
-2021-09-02 18:27:08.2156 DEBUG Connection id "0HMBDVGRMPNIA" received FIN.
-2021-09-02 18:27:08.2156 DEBUG Failed to authenticate HTTPS connection.
-2021-09-02 18:27:08.2255 DEBUG Connection id "0HMBDVGRMPNIA" stopped.
-2021-09-02 18:27:08.2255 DEBUG Connection id "0HMBDVGRMPNIA" sending FIN because: "The Socket transport's send loop completed gracefully."
-2021-09-02 18:27:08.6979 DEBUG Connection id "0HMBDVGRMPNIB" accepted.
-2021-09-02 18:27:08.6979 DEBUG Connection id "0HMBDVGRMPNIB" started.
-2021-09-02 18:27:08.9040 INFO Request starting HTTP/2 GET https://localhost:5001/weatherforecast  
-2021-09-02 18:27:08.9040 DEBUG Wildcard detected, all requests with hosts will be allowed.
-2021-09-02 18:27:08.9630 DEBUG 1 candidate(s) found for the request path '/weatherforecast'
-2021-09-02 18:27:08.9630 DEBUG Endpoint 'SqliteDapper.Demo.Controllers.WeatherForecastController.Get (SqliteDapper.Demo)' with route pattern 'WeatherForecast' is valid for the request path '/weatherforecast'
-2021-09-02 18:27:08.9630 DEBUG Request matched endpoint 'SqliteDapper.Demo.Controllers.WeatherForecastController.Get (SqliteDapper.Demo)'
-2021-09-02 18:27:08.9630 INFO Executing endpoint 'SqliteDapper.Demo.Controllers.WeatherForecastController.Get (SqliteDapper.Demo)'
-2021-09-02 18:27:08.9823 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
-2021-09-02 18:27:09.0196 INFO Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[SqliteDapper.Demo.WeatherForecast] Get() on controller SqliteDapper.Demo.Controllers.WeatherForecastController (SqliteDapper.Demo).
-2021-09-02 18:27:09.0196 DEBUG Execution plan of authorization filters (in the following order): None
-2021-09-02 18:27:09.0196 DEBUG Execution plan of resource filters (in the following order): None
-2021-09-02 18:27:09.0196 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
-2021-09-02 18:27:09.0196 DEBUG Execution plan of exception filters (in the following order): None
-2021-09-02 18:27:09.0196 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
-2021-09-02 18:27:09.0196 DEBUG Executing controller factory for controller SqliteDapper.Demo.Controllers.WeatherForecastController (SqliteDapper.Demo)
-2021-09-02 18:27:09.0196 DEBUG Executed controller factory for controller SqliteDapper.Demo.Controllers.WeatherForecastController (SqliteDapper.Demo)
-2021-09-02 18:27:09.0196 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
-2021-09-02 18:27:09.0196 DEBUG No information found on request to perform content negotiation.
-2021-09-02 18:27:09.0196 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
-2021-09-02 18:27:09.0196 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
-2021-09-02 18:27:09.0196 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
-2021-09-02 18:27:09.0196 INFO Executing ObjectResult, writing value of type 'SqliteDapper.Demo.WeatherForecast[]'.
-2021-09-02 18:27:09.1060 INFO Executed action SqliteDapper.Demo.Controllers.WeatherForecastController.Get (SqliteDapper.Demo) in 76.1426ms
-2021-09-02 18:27:09.1060 INFO Executed endpoint 'SqliteDapper.Demo.Controllers.WeatherForecastController.Get (SqliteDapper.Demo)'
-2021-09-02 18:27:09.1060 INFO Request finished in 208.7044ms 200 application/json; charset=utf-8
+2021-09-02 17:17:59.0742 DEBUG Hosting starting
+2021-09-02 17:17:59.8933 DEBUG Failed to locate the development https certificate at '(null)'.
+2021-09-02 17:18:00.0356 DEBUG Using development certificate: CN=localhost (Thumbprint: 6E9415D426DFFD898BB3A11105BA044334CCBCAD)
+2021-09-02 17:18:00.0885 DEBUG Hosting started
+2021-09-02 17:18:00.0987 DEBUG Loaded hosting startup assembly SqliteDapper.Demo
+2021-09-02 17:18:00.2986 DEBUG Connection id "0HMBDUA7KEUI5" received FIN.
+2021-09-02 17:18:00.2986 DEBUG Connection id "0HMBDUA7KEUI4" received FIN.
+2021-09-02 17:18:00.3269 DEBUG Connection id "0HMBDUA7KEUI7" accepted.
+2021-09-02 17:18:00.3269 DEBUG Connection id "0HMBDUA7KEUI4" accepted.
+2021-09-02 17:18:00.3427 DEBUG Connection id "0HMBDUA7KEUI4" started.
+2021-09-02 17:18:00.3427 DEBUG Connection id "0HMBDUA7KEUI7" started.
+2021-09-02 17:18:00.4335 DEBUG Failed to authenticate HTTPS connection.
+2021-09-02 17:18:00.4335 DEBUG Failed to authenticate HTTPS connection.
+2021-09-02 17:18:00.4448 DEBUG Connection id "0HMBDUA7KEUI4" stopped.
+2021-09-02 17:18:00.4448 DEBUG Connection id "0HMBDUA7KEUI7" stopped.
+2021-09-02 17:18:00.4448 DEBUG Connection id "0HMBDUA7KEUI4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-09-02 17:18:00.4448 DEBUG Connection id "0HMBDUA7KEUI7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-09-02 17:18:01.3577 DEBUG Connection id "0HMBDUA7KEUI8" accepted.
+2021-09-02 17:18:01.4087 DEBUG Connection id "0HMBDUA7KEUI8" started.
+2021-09-02 17:18:01.6615 INFO Request starting HTTP/2 GET https://localhost:5001/weatherforecast  
+2021-09-02 17:18:01.6850 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2021-09-02 17:18:01.7737 DEBUG 1 candidate(s) found for the request path '/weatherforecast'
+2021-09-02 17:18:01.7825 DEBUG Endpoint 'SqliteDapper.Demo.Controllers.WeatherForecastController.Get (SqliteDapper.Demo)' with route pattern 'WeatherForecast' is valid for the request path '/weatherforecast'
+2021-09-02 17:18:01.7825 DEBUG Request matched endpoint 'SqliteDapper.Demo.Controllers.WeatherForecastController.Get (SqliteDapper.Demo)'
+2021-09-02 17:18:01.7825 INFO Executing endpoint 'SqliteDapper.Demo.Controllers.WeatherForecastController.Get (SqliteDapper.Demo)'
+2021-09-02 17:18:01.8104 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2021-09-02 17:18:01.8936 INFO Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[SqliteDapper.Demo.WeatherForecast] Get() on controller SqliteDapper.Demo.Controllers.WeatherForecastController (SqliteDapper.Demo).
+2021-09-02 17:18:01.8936 DEBUG Execution plan of authorization filters (in the following order): None
+2021-09-02 17:18:01.8936 DEBUG Execution plan of resource filters (in the following order): None
+2021-09-02 17:18:01.8936 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2021-09-02 17:18:01.8936 DEBUG Execution plan of exception filters (in the following order): None
+2021-09-02 17:18:01.9054 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2021-09-02 17:18:01.9054 DEBUG Executing controller factory for controller SqliteDapper.Demo.Controllers.WeatherForecastController (SqliteDapper.Demo)
+2021-09-02 17:18:01.9054 DEBUG Executed controller factory for controller SqliteDapper.Demo.Controllers.WeatherForecastController (SqliteDapper.Demo)
+2021-09-02 17:18:01.9211 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2021-09-02 17:18:01.9211 DEBUG No information found on request to perform content negotiation.
+2021-09-02 17:18:01.9211 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-09-02 17:18:01.9211 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2021-09-02 17:18:01.9211 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-09-02 17:18:01.9211 INFO Executing ObjectResult, writing value of type 'SqliteDapper.Demo.WeatherForecast[]'.
+2021-09-02 17:18:02.0403 INFO Executed action SqliteDapper.Demo.Controllers.WeatherForecastController.Get (SqliteDapper.Demo) in 128.0042ms
+2021-09-02 17:18:02.0403 INFO Executed endpoint 'SqliteDapper.Demo.Controllers.WeatherForecastController.Get (SqliteDapper.Demo)'
+2021-09-02 17:18:02.0527 INFO Request finished in 393.9955ms 200 application/json; charset=utf-8
+2021-09-02 17:18:02.2516 INFO Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2021-09-02 17:18:02.2516 DEBUG No candidates found for the request path '/favicon.ico'
+2021-09-02 17:18:02.2516 DEBUG Request did not match any endpoints
+2021-09-02 17:18:02.2516 INFO Request finished in 9.533ms 404 
+2021-09-02 17:18:05.6106 DEBUG Connection id "0HMBDUA7KEUI8" received FIN.
+2021-09-02 17:18:05.6106 DEBUG Connection id "0HMBDUA7KEUI8" is closed. The last processed stream ID was 3.
+2021-09-02 17:18:05.6106 DEBUG Connection id "0HMBDUA7KEUI8" sending FIN because: "The client closed the connection."
+2021-09-02 17:18:05.6404 DEBUG Connection id "0HMBDUA7KEUI8" stopped.
